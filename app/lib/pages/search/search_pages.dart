@@ -1,5 +1,6 @@
 import 'package:app/pages/search/search_data_bean.dart';
 import 'package:app/widgets/common_image.dart';
+import 'package:app/widgets/common_search_bar.dart';
 import 'package:app/widgets/common_tags.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -15,8 +16,17 @@ class _SearchPage extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('搜索'),
-        centerTitle: true,
+        backgroundColor: Colors.white,
+        title: CommonSearchBar(
+          showLocation: true,
+          goBackCallback: () {},
+          inputValue: "",
+          defaultInputValue: "",
+          onCancel: () {},
+          onSearch: () {},
+          onSearchSubmit: (String) {},
+          showMap: true,
+        ),
       ),
       body: Column(
         children: [

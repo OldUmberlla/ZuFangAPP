@@ -2,6 +2,7 @@ import 'package:app/pages/home/home_index.dart';
 import 'package:app/pages/mine/mine_index.dart';
 import 'package:app/pages/news/news_pages.dart';
 import 'package:app/pages/search/search_pages.dart';
+import 'package:app/widgets/common_search_bar.dart';
 import 'package:app/widgets/page_content.dart';
 import 'package:flutter/material.dart';
 
